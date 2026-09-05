@@ -72,7 +72,7 @@ h1{
     gap: 15px;
 }
 /* sections*/
-.card, .resources{
+.card{
     border: 1px solid #ccc;
     min-height: 450px;
 }
