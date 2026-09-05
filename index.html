@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta description="This is the personal website of Kelechi Jesil Samuel, a student of BYU Pathway .webpage for WDD 131: Dynamic Web Fundamentals.">
+    <meta author="Kelechi Jesil Samuel">
+    <link rel="stylesheet" href="styles/base.css">
     <title>WDD 131- Dynamic Web Fundamentals</title>
 </head>
 
 <body>
     <header>
-    <div class="course-title">
-    <h1>WDD 131: Dynamic Web Fundamentals</h1>
-</div>
+    <span id="course-title">
+        WDD 131: Dynamic Web Fundamentals
+    </span>
     <nav>
         <a href="https://www.linkedin.com">LinkedIn</a>
-        <a href="https://ilearn.byui.edu">I-Learn</a>
-        <a href="#scripture">Scripture</a>
+        <a href=" https://byupw.instructure.com/.edu">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">
+            Scripture</a>
         <a href="#final-project">Final Project</a>
     </nav>
 </header>
@@ -23,7 +26,7 @@
     <h2 class="student-name">Kelechi Jesil Samuel</h2>
     <div class="content">
 
-        <section class="about">
+        <section class="card">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
@@ -31,13 +34,13 @@
                     web development, i enjoy creating interactive and user-friendly websites.</p>
                     <p>i enjoy learning new technologies and improving my skills and love sharing knowledge with peers.</p>
             </div>
-            <img src="kelechi-jesil-samuel.jpg" alt="profile picture of kelechi jesil samuel"
+            <img src="images/kelechi-jesil-samuel.jpg" alt="Profile Picture of Kelechi Jesil Samuel"
              class="profile-image">
              </div>
             <h3>Lagos, Nigeria</h3>
             <div class="location">
                 <div class="flag">
-                    <img src="nigeria.jpg" alt="Flag of Nigeria">
+                    <img src="images/nigeria.jpg" alt="Flag of Nigeria">
                     <p>official flag of nigeria</p>
                 </div>
                 <p>
@@ -48,7 +51,7 @@
 
             </div>
         </section>
-        <section class ="resources">
+        <section class="resources">
             <h2>Resources</h2>
             <ul>
                 <li><a href="https://www.w3schools.com">W3Schools</a></li>
@@ -66,6 +69,6 @@
             <p>last modified: <span id="last-modified"></span></p>
 </footer>
 <!-- JavaScript connection -->
-<script src="script.js"></script>
+<script src="script/getdatas.js" defer></script>
 </body>
 </html>
