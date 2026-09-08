@@ -8,8 +8,17 @@
     padding: 1rem 3rem;
   }
 
-  nav {
+ /* show nav as row on desktop */
+  nav ul {
+    display: flex;
+    flex-direction: row;
     gap: 2rem;
+    padding: 0;
+    width: auto;
+  }
+   /* hide hamburger on desktop */
+  #menu-button {
+    display: none;
   }
 
   /* main grid: 3 columns for larger view */
