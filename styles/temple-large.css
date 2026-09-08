@@ -1,0 +1,25 @@
+/*larger: 700px and up*/
+@media screen and (min-width: 700px) {
+
+  /* header: switch to row layout */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+
+  nav {
+    gap: 2rem;
+  }
+
+  /* main grid: 3 columns for larger view */
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  figure {
+    max-width: 100%;
+  }
+}

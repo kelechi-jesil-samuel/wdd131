@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #F8F9FA;
+  color: #222;
+}
+
+/* header mobile */
+header {
+    background-color: #2A4D69;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav li{
+    list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.5rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 4px;
+}
+
+/* main*/
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+main h2 {
+  text-align: center; /* center the text */
+  margin: 2rem 0;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #2A4D69;
+}
+
+/*mobile: 1 column grid with consistent white space */
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* repetition: same card style for all images */
+figure {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.2s;
+}
+
+figure:hover {
+  transform: scale(1.02);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+figcaption {
+  padding: 0.75rem 0.25rem 0.25rem 0.25rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* footer*/
+footer {
+  background-color: #2A4D69;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
