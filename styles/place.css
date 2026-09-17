@@ -7,10 +7,10 @@
 body { font-family: Arial, sans-serif; background: #fff; }
 
 header {
-    background: #C1272D;
+    background: var(--primary);
     color: white;
     text-align: center;
-    border-bottom: 6px solid #1B7A3D;
+    border-bottom: 6px solid var(--secondary);
 }
 
 .header-top {
@@ -31,40 +31,23 @@ header {
 header nav {
     display: none;
     flex-direction: column;
-    background: #C1272D;
+    background: var(--primary);
     width: 100%;
 }
 header nav.open {
-    display: flex ;
+    display: flex;
 }
 header nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
     font-size: 13px;
-    border-top: 1px solid #009688;
+    border-top: 1px solid var(--accent);
     transition: all 0.3s ease;
-    position: relative;
 }
 header nav a:hover {
-    background: #1B7A3D;
+    background: var(--secondary);
     padding-left: 20px;
-}
-header nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: var(--accent);
-    transition: width 0.3s ease;
-}
-header nav a:hover::after {
-    width: 100%;
-}
-.weather-card h2::after {
-    content: ' ⛅';
 }
 
 .spacer { height: 20px; background: white; }
@@ -76,10 +59,7 @@ header nav a:hover::after {
 .hero img {
     width: 100%;
     display: block;
-    max-width: 320px;
-    margin: 0 auto;
     border-radius: 5px;
-
 }
 
 .data-card, .weather-card {
@@ -105,23 +85,23 @@ header nav a:hover::after {
 }
 
 footer {
-    background: #C1272D;
+    background: var(--primary);
     color: white;
     text-align: center;
     font-size: 10px;
     padding: 10px;
-    max-width: 320px;
+    max-width: 100%;
     margin: 10px auto 0;
 }
 
 @media (min-width: 768px) {
     header {
-        background: #c2185b;
+        background: var(--primary);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-        border-bottom: 8px solid #009688;
+        border-bottom: 8px solid var(--accent);
     }
     #menuBtn { display: none; }
     header nav {
@@ -135,7 +115,7 @@ footer {
         border: none; padding: 5px; 
     }
     header nav a:hover {
-        background: #009688; 
+        background: var(--accent); 
         border-radius: 4px; 
         padding: 5px 10px; 
     }
@@ -161,6 +141,7 @@ footer {
         max-width: 100%; 
         object-fit: cover; 
         margin: 0;
+        border-radius: 0;
     }
 
     .data-card, .weather-card {
@@ -175,7 +156,7 @@ footer {
     .data-card { left: 20px; }
     .weather-card { right: 20px; }
     .data-card h2, .weather-card h2 {
-        background: #009688;
+        background: var(--accent);
         color: white;
         padding: 8px 15px;
         margin-bottom: 10px;
@@ -186,12 +167,10 @@ footer {
         padding: 0 15px 15px; 
         font-size: 12px; 
     }
-    .weather-icon-mobile 
-    { display: none; }
-    .weather-icon-desktop 
-    { display: inline; }
+    .weather-icon-mobile { display: none; }
+    .weather-icon-desktop { display: inline; }
     footer { 
-        background: #c2185b; 
+        background: var(--primary); 
         max-width: 100%; 
         margin: 0; 
         padding: 15px; 

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Italy - Discover data, weather, culture and iconic landmarks like Rome and the Colosseum.">
-<meta name="author" content="Kelech Jesil Samuel">
-    <title>Country-Webpage</title>
+    <meta name="author" content="Kelech Jesil Samuel">
+    <title>Italy Rome - Place Page</title>
     <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
     <header>
         <div class="header-top">
             <h1>Italy Rome</h1>
-            <button id="menuBtn">☰</button>
+            <button id="menuBtn" aria-label="Menu">☰</button>
         </div>
         <nav id="mainNav">
             <a href="#data">Data</a>
@@ -25,32 +25,41 @@
 
     <main>
         <div class="hero">
-           <picture>
+          <picture>
     <source srcset="images/italy-rome.webp" media="(min-width: 768px)">
-    <img src="images/italy-rome.webp" 
-         srcset="images/italy-rome.webp 400w, images/italy-rome.webp 800w" 
-         sizes="(max-width: 767px) 400px, 800px"
-         alt="Italy Rome - Colosseum view" 
-         width="800" height="500">
+    <img src="images/italy-rome.webp" alt="Italy Rome - Colosseum view" width="800" height="500">
 </picture>
 
-            <section class="data-card" id="data">
+            <div class="data-card" id="data">
                 <h2>Data</h2>
                 <ul>
-                    <li><strong>Area:</strong> 587,041 sq km</li>
-                    <li><strong>Population:</strong> 27,691,018</li>
-                    <li><strong>Capital:</strong> Rome</li>
-                    <li><strong>Languages:</strong> Latin, French</li>
-                    <li><strong>Currency:</strong> Euro</li>
-                    <li><strong>Time Zone:</strong> UTC+3</li>
-                    <li><strong>Calling Code:</strong> +261</li>
-                    <li><strong>Internet TLD:</strong> .mg</li>
+                  <li><strong>Area:</strong> 301,340 sq km</li>
+                  <li><strong>Population:</strong> 59M</li>
+                  <li><strong>Capital:</strong> Rome</li>
+                  <li><strong>Languages:</strong> Italian</li>
+                  <li><strong>Currency:</strong> Euro</li>
+                  <li><strong>Time Zone:</strong> CET</li>
+                  <li><strong>Calling Code:</strong> +39</li>
+                  <li><strong>Internet TLD:</strong> .it</li>
                 </ul>
-            </section>
+            </div>
 
             <section class="weather-card" id="weather">
-                <h2>Weather <span class="weather-icon-desktop">⛅</span></h2>
-                <div class="weather-icon-mobile">⛅</div>
+                <h2>Weather 
+                    <span class="weather-icon-desktop">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40" aria-label="Partly Cloudy">
+                            <circle cx="24" cy="24" r="12" fill="#FFD93D" />
+                            <path d="M24 6 V10 M24 38 V42 M6 24 H10 M38 24 H42 M11 11 L14 14 M34 34 L37 37 M11 37 L14 34 M34 14 L37 11" stroke="#FFD93D" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M46 42 H28 C22 42 18 38 18 34 C18 29 22 25 28 25 C29 19 34 16 40 18 C42 14 48 13 52 17 C56 20 56 27 52 30 C56 32 57 38 53 41 C51 42 49 42 46 42 Z" fill="#E6E6E6" stroke="#999" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                </h2>
+                <div class="weather-icon-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="60" height="60" aria-label="Partly Cloudy">
+                        <circle cx="24" cy="24" r="12" fill="#FFD93D" />
+                        <path d="M46 42 H28 C22 42 18 38 18 34 C18 29 22 25 28 25 C29 19 34 16 40 18 C42 14 48 13 52 17 C56 20 56 27 52 30 C56 32 57 38 53 41 C51 42 49 42 46 42 Z" fill="#E6E6E6" stroke="#999" stroke-width="1.5"/>
+                    </svg>
+                </div>
                 <ul>
                     <li><strong>Temperature:</strong> 10 °C</li>
                     <li><strong>Conditions:</strong> Partly Cloudy</li>
