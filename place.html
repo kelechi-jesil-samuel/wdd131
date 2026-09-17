@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the personal website of Kelechi Jesil Samuel, a student of BYU Pathway. Webpage for WDD 131: country webpage.">
-    <meta name="author" content="Kelechi Jesil Samuel">
-
-    <title>WDD131 - Country-Webpage</title>
+    <title>Country-Webpage</title>
     <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
-    <header class="mobile-header">
+    <header>
         <div class="header-top">
             <h1>Italy Rome</h1>
             <button id="menuBtn">☰</button>
@@ -21,33 +18,34 @@
             <a href="#">About</a>
         </nav>
     </header>
-    <header class="desktop-header">
-        <h1>Italy Rome</h1>
-        <nav>
-            <a href="#data">Data</a>
-            <a href="#weather">Weather</a>
-            <a href="#">About</a>
-        </nav>
-    </header>
 
     <div class="spacer"></div>
 
     <main>
         <div class="hero">
-            <img src="images/spencer-davis-haLyuhP6oLE-unsplash (1).webp" alt="Lemur">
+            <picture>
+                <source srcset="images/italy-rome.webp" media="(min-width: 768px)">
+                <img src="images/italy-rome.webp" 
+                     srcset="images/italy-rome.webp 400w, images/italy-rome.webp 800w" 
+                     sizes="(max-width: 767px) 400px, 800px"
+                     alt="italy rome - Hero Image" 
+                     width="800" height="500">
+            </picture>
+
             <section class="data-card" id="data">
                 <h2>Data</h2>
                 <ul>
                     <li><strong>Area:</strong> 587,041 sq km</li>
                     <li><strong>Population:</strong> 27,691,018</li>
                     <li><strong>Capital:</strong> Antananarivo</li>
-                    <li><strong>Languages:</strong> Malagasy,French</li>
+                    <li><strong>Languages:</strong> Malagasy, French</li>
                     <li><strong>Currency:</strong> Malagasy Ariary</li>
                     <li><strong>Time Zone:</strong> UTC+3</li>
                     <li><strong>Calling Code:</strong> +261</li>
                     <li><strong>Internet TLD:</strong> .mg</li>
                 </ul>
             </section>
+
             <section class="weather-card" id="weather">
                 <h2>Weather <span class="weather-icon-desktop">⛅</span></h2>
                 <div class="weather-icon-mobile">⛅</div>
@@ -62,10 +60,10 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Kelechi Jesil Samuel <br>🎄Lagos Nigeria  🎄</p>
+        <p>&copy; <span id="year"></span> Kelech Jesil Samuel <br>🎄 Lagos Nigeria🎄</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="scripts/place.js "defer></script>
+    <script src="scripts/place.js"></script>
 </body>
 </html>
