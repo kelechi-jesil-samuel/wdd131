@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #F8F9FA;
+  color: #222;
+  line-height: 1.5;
+}
+header {
+    background-color: #2A4D69;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+    position: relative;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#menu-button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#menu-button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+nav ul{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  gap: 1rem;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav li{ list-style: none; }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
+  display: block;
+}
+nav a:hover {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 4px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+main h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #2A4D69;
+}
+
+.res-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.res-grid section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+}
+
+.res-grid section h3 {
+  color: #2A4D69;
+  margin-bottom: 0.5rem;
+}
+
+.res-grid section p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+.res-grid .label {
+  font-weight: 600;
+  color: #6B4E8B;
+}
+
+.res-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin-top: 0.75rem;
+  animation: fadeFromBlack 2.5s ease-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeFromBlack{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+/* footer*/
+footer {
+  background-color: #2A4D69;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}

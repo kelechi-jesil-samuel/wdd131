@@ -1,0 +1,46 @@
+@media screen and (min-width: 700px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  nav ul, #nav-menu {
+    display: flex ;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+  }
+  #menu-button {
+    display: none;
+  }
+
+  main {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .res-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/*Animation keep your fade*/
+img {
+  width: 100%;
+  animation: fadeFromBlack 2.5s ease-in;
+}
+
+@keyframes fadeFromBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
