@@ -14,6 +14,12 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
 nav a {
     margin-left: 15px;
     text-decoration: none;
@@ -21,7 +27,6 @@ nav a {
     font-size: 14px;
 }
 
-/*Hamburger hidden on desktop */
 #menuBtn {
     display: none;
     font-size: 24px;
@@ -59,6 +64,7 @@ nav a {
 }
 
 .box { width: 30%; }
+.box h2 { font-size: 16px; }
 
 .download {
     background-color: white;
@@ -108,7 +114,7 @@ footer {
     font-size: 12px;
 }
 
-/*=====MOBILE VIEW====*/
+/* ===== MOBILE VIEW ===== */
 @media screen and (max-width: 600px) {
     #menuBtn {
         display: block;
@@ -121,7 +127,7 @@ footer {
         color: white;
     }
     
-    header h3 { color: white; }
+    .logo { color: white; }
 
     #mainNav {
         display: none;
@@ -146,41 +152,37 @@ footer {
         color: white;
     }
 
-    .hero p 
-    { 
-        color: #ddd;
-     }
+    .hero p {
+         color: #ddd; 
+        }
     .hero h1 { 
         font-size: 18px; 
     }
-    .phone
-     { margin: 20px auto; 
+    .phone { margin: 20px auto; 
         width: 120px; 
-        height: 200px;
-         padding-top: 80px; 
-        }
+        height: 200px; 
+        padding-top: 80px; 
+    }
     .features { 
-        flex-direction: column;
-     }
-    .box {
-         width: 100%;
-          margin-bottom: 20px; 
-          border-bottom: 1px solid #eee; 
-          padding-bottom: 15px; }
+        flex-direction: column; 
+    }
+    .box { 
+        width: 100%; 
+        margin-bottom: 20px; 
+        border-bottom: 1px solid #eee; 
+        padding-bottom: 15px; }
     .download { 
         flex-direction: column;
          text-align: center;
          }
     .image-box {
-         margin: 15px auto;
-          width: 100%;
-         }
-    .contact input {
-         width: 90%;
-          display: block; 
-          margin: 10px auto; 
-        }
-    .app { 
-        padding: 30px 15px;
+         margin: 15px auto; 
+         width: 100%; }
+    .contact input { 
+        width: 90%; display: block; 
+        margin: 10px auto;
      }
+    .app {
+         padding: 30px 15px; 
+        }
 }
