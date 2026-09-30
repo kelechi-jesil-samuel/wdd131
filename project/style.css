@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/*Hamburger hidden on desktop */
+#menuBtn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    margin-bottom: 10px;
+}
+
+.hero h1 { font-size: 22px; }
+.hero p { font-size: 14px; color: #555; margin: 15px 0; }
+
+.phone {
+    width: 150px;
+    height: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #eee;
+}
+
+.features {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box { width: 30%; }
+
+.download {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    margin-bottom: 10px;
+}
+
+.image-box {
+    width: 200px;
+    height: 120px;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+input { padding: 8px; margin: 5px; }
+
+button {
+    padding: 8px 15px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+button.black { background-color: black; color: white; }
+
+.app {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/*=====MOBILE VIEW====*/
+@media screen and (max-width: 600px) {
+    #menuBtn {
+        display: block;
+        color: white;
+    }
+    
+    header {
+        flex-wrap: wrap;
+        background-color: #555;
+        color: white;
+    }
+    
+    header h3 { color: white; }
+
+    #mainNav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #mainNav a {
+        display: block;
+        color: white;
+        font-size: 12px;
+        padding: 10px;
+        border-bottom: 1px solid #666;
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        background-color: #555;
+        color: white;
+    }
+
+    .hero p 
+    { 
+        color: #ddd;
+     }
+    .hero h1 { 
+        font-size: 18px; 
+    }
+    .phone
+     { margin: 20px auto; 
+        width: 120px; 
+        height: 200px;
+         padding-top: 80px; 
+        }
+    .features { 
+        flex-direction: column;
+     }
+    .box {
+         width: 100%;
+          margin-bottom: 20px; 
+          border-bottom: 1px solid #eee; 
+          padding-bottom: 15px; }
+    .download { 
+        flex-direction: column;
+         text-align: center;
+         }
+    .image-box {
+         margin: 15px auto;
+          width: 100%;
+         }
+    .contact input {
+         width: 90%;
+          display: block; 
+          margin: 10px auto; 
+        }
+    .app { 
+        padding: 30px 15px;
+     }
+}
