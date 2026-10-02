@@ -1,0 +1,85 @@
+* { 
+    box-sizing: border-box; 
+    margin:0;
+     padding:0;
+     }
+body { font-family: Arial, 
+    sans-serif; display:flex;
+     flex-direction:column; 
+     align-items:center;
+      background:#ffffff; }
+header { 
+    background-color:#2d0a31;
+     color:white; 
+     width:100%; 
+     max-width:400px;
+      text-align:center; 
+      padding:15px; }
+header h1 { font-size:20px; }
+main { width:100%;
+     max-width:400px; }
+.review-form { 
+    background-color:#d4c5d9; 
+    padding:20px 15px; }
+label, legend {
+     font-size:14px; 
+     font-weight:bold; 
+     margin-top:15px; 
+     display:block; }
+.optional { 
+    color:#0000ff;
+     font-size:11px; }
+select, input[type="date"], input[type="text"], textarea
+ { 
+    width:100%;
+     padding:8px; 
+     margin-top:4px;
+      border:none; 
+      background:white;
+       border-radius:3px; 
+       height:38px; }
+textarea { 
+    height:80px;
+     resize:none; }
+fieldset { 
+    border:none;
+     margin-top:15px; }
+.rating-field {
+     border:none; }
+.stars {
+     display:flex; 
+     justify-content:space-between;
+      text-align:center;
+       margin-top:5px; }
+.stars label { 
+    font-weight:normal; 
+    margin-top:0; 
+    font-size:14px; }
+.stars input { 
+    display:block; 
+    margin:5px auto 0 auto; }
+.check { 
+    font-weight:normal;
+     display:flex; 
+     align-items:center; 
+     gap:6px;
+      margin-top:6px; 
+      font-size:14px; }
+input[type="submit"] {
+     width:100%; margin-top:20px;
+      padding:10px; 
+      font-weight:bold;
+       font-size:16px; 
+       background:white;
+        border:1px solid #888; 
+        border-radius:4px; 
+        cursor:pointer; }
+footer { 
+    background-color:#2d0a31; 
+    color:white;
+     width:100%; 
+     max-width:400px;
+      text-align:center; 
+      padding:15px; 
+      font-size:13px; 
+      line-height:1.6; }

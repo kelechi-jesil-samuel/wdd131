@@ -1,188 +1,109 @@
+/* AgriLearn JSS - Site Plan CSS */
+:root {
+  --primary: #2E7D32;
+  --secondary: #FFC107;
+  --accent: #795548;
+  --bg: #F1F8E9;
+  --text: #212121;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.7;
 }
 
 header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    border-bottom: 1px solid #ccc;
+  background: var(--primary);
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
+header h1 { 
+  font-family: 'Poppins', sans-serif;
+  margin: 0; 
+  font-size: 2.4rem;
 }
 
-nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-#menuBtn {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+section {
+  background: white;
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--primary);
 }
 
-.hero {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 30px;
-    margin-bottom: 10px;
+h2 { 
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary); 
+  margin-top: 0;
 }
 
-.hero h1 { font-size: 22px; }
-.hero p { font-size: 14px; color: #555; margin: 15px 0; }
+h3 { color: var(--accent); }
 
-.phone {
-    width: 150px;
-    height: 250px;
-    border: 4px solid black;
-    border-radius: 20px;
-    text-align: center;
-    padding-top: 100px;
-    background-color: #eee;
+.colors {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
 }
 
-.features {
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    text-align: center;
-    margin-bottom: 10px;
+.color-box {
+  width: 130px;
+  height: 110px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.2;
 }
 
-.box { width: 30%; }
-.box h2 { font-size: 16px; }
+.color-box.primary { background: #2E7D32; }
+.color-box.secondary { background: #FFC107; color: #000; }
+.color-box.accent { background: #795548; }
+.color-box.background { background: #F1F8E9; color: #000; border: 1px solid #ccc; }
 
-.download {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 30px;
-    margin-bottom: 10px;
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
-.image-box {
-    width: 200px;
-    height: 120px;
-    background-color: #eee;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.contact {
-    background-color: white;
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 10px;
-}
-
-input { padding: 8px; margin: 5px; }
-
-button {
-    padding: 8px 15px;
-    border: 1px solid black;
-    background-color: white;
-    cursor: pointer;
-}
-
-button.black { background-color: black; color: white; }
-
-.app {
-    background-color: white;
-    text-align: center;
-    padding: 40px;
-    margin-bottom: 10px;
+.wireframe {
+  border: 2px dashed #81C784;
+  padding: 1.2rem;
+  background: #f9fbe7;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: pre-line;
 }
 
 footer {
-    background-color: #ddd;
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
+  text-align: center;
+  padding: 2rem;
+  background: var(--primary);
+  color: white;
+  margin-top: 2rem;
 }
 
-/* ===== MOBILE VIEW ===== */
-@media screen and (max-width: 600px) {
-    #menuBtn {
-        display: block;
-        color: white;
-    }
-    
-    header {
-        flex-wrap: wrap;
-        background-color: #555;
-        color: white;
-    }
-    
-    .logo { color: white; }
-
-    #mainNav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    #mainNav a {
-        display: block;
-        color: white;
-        font-size: 12px;
-        padding: 10px;
-        border-bottom: 1px solid #666;
-        margin: 0;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        background-color: #555;
-        color: white;
-    }
-
-    .hero p {
-         color: #ddd; 
-        }
-    .hero h1 { 
-        font-size: 18px; 
-    }
-    .phone { margin: 20px auto; 
-        width: 120px; 
-        height: 200px; 
-        padding-top: 80px; 
-    }
-    .features { 
-        flex-direction: column; 
-    }
-    .box { 
-        width: 100%; 
-        margin-bottom: 20px; 
-        border-bottom: 1px solid #eee; 
-        padding-bottom: 15px; }
-    .download { 
-        flex-direction: column;
-         text-align: center;
-         }
-    .image-box {
-         margin: 15px auto; 
-         width: 100%; }
-    .contact input { 
-        width: 90%; display: block; 
-        margin: 10px auto;
-     }
-    .app {
-         padding: 30px 15px; 
-        }
+@media(max-width: 600px){
+  .grid-2 { grid-template-columns: 1fr; }
+  header h1 { font-size: 1.8rem; }
 }
