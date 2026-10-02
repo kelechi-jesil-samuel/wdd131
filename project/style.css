@@ -1,109 +1,111 @@
-/* AgriLearn JSS - Site Plan CSS */
 :root {
-  --primary: #2E7D32;
-  --secondary: #FFC107;
-  --accent: #795548;
-  --bg: #F1F8E9;
-  --text: #212121;
+  --primary: #2d0a31;
+  --secondary: #d4c5d9;
+  --accent: #f9a825;
+  --text: #1a1a1a;
 }
 
+* { box-sizing: border-box; }
+
 body {
-  font-family: 'Open Sans', 'Segoe UI', sans-serif;
-  background: var(--bg);
+  font-family: 'Open Sans', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
   color: var(--text);
-  margin: 0;
-  line-height: 1.7;
+  line-height: 1.6;
+  background: white;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
 }
 
 header {
   background: var(--primary);
   color: white;
-  padding: 2.5rem 1rem;
+  padding: 20px;
   text-align: center;
+  border-radius: 8px;
 }
 
-header h1 { 
-  font-family: 'Poppins', sans-serif;
-  margin: 0; 
-  font-size: 2.4rem;
-}
-
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
+header h1 { color: white; margin: 0; }
+header p { color: var(--secondary); }
 
 section {
-  background: white;
-  padding: 1.8rem 2rem;
-  margin-bottom: 1.8rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  border-left: 6px solid var(--primary);
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  background: #fdf8ff;
 }
 
-h2 { 
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary); 
-  margin-top: 0;
-}
-
-h3 { color: var(--accent); }
-
-.colors {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  background: var(--primary);
+  color: var(--accent);
+  padding: 10px 15px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid var(--accent);
 }
 
 .color-box {
-  width: 130px;
-  height: 110px;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8px;
   text-align: center;
-  padding-bottom: 10px;
-  color: white;
+  line-height: 100px;
   font-weight: bold;
-  font-size: 0.75rem;
-  line-height: 1.2;
+  color: white;
 }
 
-.color-box.primary { background: #2E7D32; }
-.color-box.secondary { background: #FFC107; color: #000; }
-.color-box.accent { background: #795548; }
-.color-box.background { background: #F1F8E9; color: #000; border: 1px solid #ccc; }
+.c1 { background: var(--primary); }
+.c2 { background: var(--secondary); color: var(--primary); border: 1px solid var(--primary); }
+.c3 { background: var(--accent); color: var(--primary); }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
+.font1 { font-family: 'Montserrat', sans-serif; font-size: 24px; }
+.font2 { font-family: 'Open Sans', sans-serif; }
 
 .wireframe {
-  border: 2px dashed #81C784;
-  padding: 1.2rem;
-  background: #f9fbe7;
-  border-radius: 8px;
-  margin-top: 1rem;
-  font-family: monospace;
-  font-size: 0.9rem;
-  white-space: pre-line;
+  border: 2px dashed var(--primary);
+  padding: 15px;
+  margin: 20px 0;
+  background: white;
+}
+
+.wireframe.mobile { max-width: 320px; }
+
+.wire {
+  background: var(--secondary);
+  border: 1px solid var(--primary);
+  margin: 8px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.wire.hero { height: 100px; }
+
+.desktop {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
 }
 
 footer {
-  text-align: center;
-  padding: 2rem;
   background: var(--primary);
   color: white;
-  margin-top: 2rem;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 @media(max-width: 600px){
-  .grid-2 { grid-template-columns: 1fr; }
-  header h1 { font-size: 1.8rem; }
+  .desktop { grid-template-columns: 1fr; }
 }
